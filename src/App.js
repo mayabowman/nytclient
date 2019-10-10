@@ -49,10 +49,10 @@ class App extends React.Component {
           books: data,
           error: null
         })
-        .catch(err => {
-          this.setState({
-            error: 'Sorry, could not get books at this time.'
-          })
+      })
+      .catch(err => {
+        this.setState({
+          error: 'Sorry, could not get books at this time.'
         })
       })
   }
